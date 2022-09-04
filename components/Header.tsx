@@ -23,11 +23,13 @@ MyLink.displayName = "MyLink";
 
 const Header = () => {
   return (
-    <header className="w-full py-5 my-5 flex items-center justify-between">
+    <header className="w-full mb-5 flex items-strech justify-between text-white h-[15vh]">
       <Link href="/">
-        <h1 className="font-title font-semibold text-4xl">eshop</h1>
+        <h1 className="font-title font-semibold text-4xl text-white flex items-center">
+          eshop
+        </h1>
       </Link>
-      <div className="sm:hidden">
+      <div className="sm:hidden flex items-center">
         <Menu as="div" className="relative inline-block text-left">
           <Menu.Button className="inline-flex w-full justify-center rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             <svg
@@ -82,10 +84,21 @@ const Header = () => {
           </Transition>
         </Menu>
       </div>
-      <ul className="hidden sm:flex text-gray-500 uppercase font-medium items-center justify-end gap-2 sm:gap-5">
-        <li className="btn">account</li>
-        <li className="btn">logout</li>
+      <ul className="hidden sm:flex text-white uppercase font-medium items-center justify-end ">
+        <li className="hover:bg-blue-600 h-full p-5 flex items-center cursor-pointer">
+          sale
+        </li>
+        <li className="hover:bg-blue-600 h-full p-5 flex items-center cursor-pointer">
+          collections
+        </li>
+        <li className="hover:bg-blue-600 h-full p-5 flex items-center cursor-pointer">
+          account
+        </li>
+        <li className="hover:bg-blue-600 h-full p-5 flex items-center cursor-pointer">
+          logout
+        </li>
       </ul>
+      <div className="w-screen h-[15vh] bg-blue-12 absolute left-0 right-0 bg-blue-500 -z-10"></div>
     </header>
   );
 };

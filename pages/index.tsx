@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 
       <main>
         <h1 className="text-3xl font-title font-semibold">hello</h1>
-        <button className="btn">world</button>
+        <button className="btn primary">hello</button>
       </main>
     </>
   );

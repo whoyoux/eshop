@@ -19,6 +19,14 @@
   }
 
   .btn {
-    @apply px-3.5 py-3 rounded cursor-pointer hover:bg-slate-200 hover:text-black;
+    @apply px-3.5 py-3 rounded cursor-pointer hover:underline h-full;
+  }
+
+  .primary {
+    @apply text-white hover:text-white bg-blue-500 hover:bg-blue-600 transition-all border-2 border-blue-500 hover:border-blue-600;
+  }
+
+  .ghost {
+    @apply border-2 border-blue-500 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all;
   }
 }
